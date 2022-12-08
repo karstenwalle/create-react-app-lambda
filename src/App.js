@@ -46,17 +46,17 @@ class App extends Component {
   componentDidMount() {
     netlifyIdentity.init();
   }
-  // handleIdentity = (e) => {
-  //   e.preventDefault();
-  //   netlifyIdentity.open();
-  // }
+  handleIdentity = (e) => {
+    e.preventDefault();
+    netlifyIdentity.open();
+  }
   render() {
     return (
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">Slack Messenger</h1>
         </header>
-        {/* <p><button onClick={this.handleIdentity}>User Status</button></p> */}
+        <p><button onClick={this.handleIdentity}>User Status</button></p>
         <SlackMessage />
       </div>
     );
