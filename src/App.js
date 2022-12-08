@@ -7,6 +7,9 @@ class SlackMessage extends Component {
   }
   handleText = (e) => {
     this.setState({text: e.target.value});
+    console.log(e.target.value)
+    console.log(this.state.text)
+    console.log('--')
   };
   handleSubmit = (e) => {
     e.preventDefault();
