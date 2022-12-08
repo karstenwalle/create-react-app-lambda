@@ -8,13 +8,13 @@ export function handler(event, context, callback) {
     const payload = JSON.parse(event.body);
     fetch(slackURL, {
       method: "POST",
-      body: JSON.stringify({ text: "payload.text" })
+      body: JSON.stringify({ text: payload.text })
     }).then(() => {
       callback(null, { statusCode: 204 });
     }).catch((eg) => {
       callback(null, { statusCode: 500, body: "Internalff Server Error: " + eg });
     })
   } catch (ef) {
-    callback(null, { statusCode: 500, body: "Internalee Server Error: " + "|-|" + payload.text + "||" + ef });
+    callback(null, { statusCode: 500, body: "Internalee Server Error: " + "1" + event + "2" + payload + "|-|" + payload.text + "||" + ef });
   }
 }
