@@ -15,6 +15,6 @@ export function handler(event, context, callback) {
       callback(null, { statusCode: 500, body: "Internalff Server Error: " + eg });
     })
   } catch (ef) {
-    callback(null, { statusCode: 500, body: "Internalee Server Error: " + payload.text + ef });
+    callback(null, { statusCode: 500, body: "Internalee Server Error: " + slackURL + payload.text + ef });
   }
 }
