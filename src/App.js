@@ -1,8 +1,6 @@
-// import netlifyIdentity from "netlify-identity-widget"
+import netlifyIdentity from "netlify-identity-widget"
 import React, { Component } from 'react';
 import './App.css';
-const netlifyIdentity = require("netlify-identity-widget");
-
 class SlackMessage extends Component {
   constructor(props) {
     super(props);
@@ -45,20 +43,20 @@ class SlackMessage extends Component {
   }
 }
 class App extends Component {
-  componentDidMount() {
-    netlifyIdentity.init();
-  }
-  handleIdentity = (e) => {
-    e.preventDefault();
-    netlifyIdentity.open();
-  }
+  // componentDidMount() {
+  //   netlifyIdentity.init();
+  // }
+  // handleIdentity = (e) => {
+  //   e.preventDefault();
+  //   netlifyIdentity.open();
+  // }
   render() {
     return (
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">Slack Messenger</h1>
         </header>
-        <p><button onClick={this.handleIdentity}>User Status</button></p>
+        {/* <p><button onClick={this.handleIdentity}>User Status</button></p> */}
         <SlackMessage />
       </div>
     );
