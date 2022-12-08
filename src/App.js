@@ -1,6 +1,8 @@
-import netlifyIdentity from "netlify-identity-widget"
+// import netlifyIdentity from "netlify-identity-widget"
 import React, { Component } from 'react';
 import './App.css';
+const netlifyIdentity = require("netlify-identity-widget");
+
 class SlackMessage extends Component {
   constructor(props) {
     super(props);
