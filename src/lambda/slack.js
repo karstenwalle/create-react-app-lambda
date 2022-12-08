@@ -8,7 +8,7 @@ export function handler(event, context, callback) {
     const payload = JSON.parse(event.body);
     fetch(slackURL, {
       method: "POST",
-      payload: {"text": "This is a line of text in a channel.\nAnd this is another line of text."}
+      payload: {"text": "This is a line of text in a channel.\nAnd this is anotherd line of text."}
       // payload: JSON.stringify({ text: payload.text })
     }).then(() => {
       callback(null, { statusCode: 204 });
