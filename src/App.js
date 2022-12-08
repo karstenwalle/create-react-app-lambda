@@ -54,10 +54,10 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Slack dMessenger</h1>
+          <h1 className="App-title">Slack Messenger</h1>
         </header>
-        <p><button onClick={this.handleIdentity}>User Status</button></p>
-        <SlackMessage />
+        <p onClick={this.handleIdentity}>User Status</p>
+        <SlackMessage/>
       </div>
     );
   }
