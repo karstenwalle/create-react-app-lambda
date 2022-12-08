@@ -43,9 +43,9 @@ class SlackMessage extends Component {
   }
 }
 class App extends Component {
-  // componentDidMount() {
-  //   netlifyIdentity.init();
-  // }
+  componentDidMount() {
+    netlifyIdentity.init();
+  }
   // handleIdentity = (e) => {
   //   e.preventDefault();
   //   netlifyIdentity.open();
