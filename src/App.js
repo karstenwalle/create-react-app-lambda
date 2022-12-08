@@ -57,7 +57,7 @@ class App extends Component {
           <h1 className="App-title">Slack Messenger</h1>
         </header>
         {/* <p onClick={this.handleIdentity}>User Status</p> */}
-        <p><button onClick={this.handleIdentity}>User Status</button></p>
+        {/* <p><button onClick={this.handleIdentity}>User Status</button></p> */}
         <SlackMessage/>
       </div>
     );
