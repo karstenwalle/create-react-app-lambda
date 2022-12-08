@@ -9,7 +9,7 @@ export function handler(event, context, callback) {
     fetch(slackURL, {
       method: "POST",
       body: JSON.stringify({ text: payload.text }),
-      headers: {'Content-Type': 'application/json'}
+      headers: {'Content-Type:application/json'}
     }).then(() => {
       callback(null, { statusCode: 204 });
     }).catch((e) => {
