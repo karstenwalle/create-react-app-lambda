@@ -3,7 +3,7 @@ import './App.css';
 class SlackMessage extends Component {
   constructor(props) {
     super(props);
-    this.state = {loading: false, text: "hjg", error: null, success: false};
+    this.state = {loading: false, text: null, error: null, success: false};
   }
   handleText = (e) => {
     this.setState({text: e.target.value});
