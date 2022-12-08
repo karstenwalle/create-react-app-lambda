@@ -12,7 +12,7 @@ export function handler(event, context, callback) {
     }).then(() => {
       callback(null, { statusCode: 204 });
     }).catch((e) => {
-      callback(null, { statusCode: 500, body: "Internal Server Error: " + e });
+      callback(null, { statusCode: 500, body: "Internalu Server Error: " + e });
     })
   } catch (e) {
     callback(null, { statusCode: 500, body: "Internal Server Error: " + e });
