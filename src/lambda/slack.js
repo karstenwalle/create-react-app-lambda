@@ -11,10 +11,10 @@ export function handler(event, context, callback) {
       body: JSON.stringify({ text: payload.text })
     }).then(() => {
       callback(null, { statusCode: 204 });
-    }).catch((e) => {
-      callback(null, { statusCode: 500, body: "Internal Server Error: " + e });
+    }).catch((eg) => {
+      callback(null, { statusCode: 500, body: "Internal Server Error: " + eg });
     })
-  } catch (e) {
-    callback(null, { statusCode: 500, body: "Internal Server Error: " + e });
+  } catch (ef) {
+    callback(null, { statusCode: 500, body: "Internal Server Error: " + ef });
   }
 }
