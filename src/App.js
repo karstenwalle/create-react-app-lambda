@@ -54,7 +54,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Slack Messenger</h1>
+          <h1 className="App-title">Slack dMessenger</h1>
         </header>
         <p><a href="#" onClick={this.handleIdentity}>User Status</a></p>
         <SlackMessage />
