@@ -7,7 +7,7 @@ export function handler(event, context, callback) {
   try {
     const payload = JSON.parse(event.body);
     fetch(slackURL, {
-      method: "POST",
+      method: 'post',
       body: JSON.stringify({ text: payload.text }),
       headers: {'Content-type':'application/json'}
     }).then(() => {
